@@ -6,9 +6,9 @@ function play(userChoice) {
   const choices = ["pierre", "feuille", "ciseau"];
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-  const resultElement = document.getElementById("result");
+  const resultat = document.getElementById("result");
 
-  resultElement.textContent = "";
+  resultat.textContent = "";
 
   resetBorders();
 
@@ -21,7 +21,8 @@ function resetBorders() {
 }
 
 function determineWinner(userChoice, computerChoice) {
-  const resultElement = document.getElementById("result");
+  const resultat = document.getElementById("result");
+  const explain = document.getElementById("explain");
   const playerImage = document.getElementById(`player-${userChoice}`);
 
   const winComdition = {
@@ -31,17 +32,20 @@ function determineWinner(userChoice, computerChoice) {
   };
 
   if (userChoice === computerChoice) {
-    resultElement.textContent = `Égalité ! Vous avez tous deux choisi ${userChoice}.`;
+    resultat.textContent = `Égalité !`;
+    explain.textContent = `Vous avez tous deux choisi ${userChoice}.`
     playerImage.classList.add("egal");
     draw++;
   }
   else if (winComdition[userChoice] === computerChoice) {
-    resultElement.textContent = `Vous avez gagné ! Vous avez choisi ${userChoice} et l'ordinateur a choisi ${computerChoice}.`;
+    resultat.textContent = `Vous avez gagné !`;
+    explain.textContent = `Vous avez choisi ${userChoice} et l'ordinateur a choisi ${computerChoice}.`;
     playerImage.classList.add("selected");
     win++;
   } 
   else{
-    resultElement.textContent = `Vous avez perdu ! Vous avez choisi ${userChoice} et l'ordinateur a choisi ${computerChoice}.`;
+    resultat.textContent = `Vous avez perdu !`;
+    explain.textContent = `Vous avez choisi ${userChoice} et l'ordinateur a choisi ${computerChoice}.`;
     playerImage.classList.add("loser");
     losse++;
   }

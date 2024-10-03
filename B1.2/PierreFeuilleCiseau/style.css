@@ -20,9 +20,14 @@ body {
     border: 3px solid orange; /* Egalité: orange */
 }
 #result {
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     margin-top: 20px;
+}
+#explain {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 img {
     border-radius: 20px;
