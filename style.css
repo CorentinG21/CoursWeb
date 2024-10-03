@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+}
+.choice {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid transparent; /* bordure par défaut */
+}
+.selected {
+    border: 2px solid green; /* Gagnant: vert */
+}
+.loser {
+    border: 2px solid red; /* Perdant: rouge */
+}
+.egal {
+    border: 2px solid orange; /* Egalité: orange */
+}
+#result {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
