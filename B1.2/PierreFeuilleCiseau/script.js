@@ -21,7 +21,7 @@ function determineWinner(userChoice, computerChoice) {
 
   const playerImage = document.getElementById(`player-${userChoice}`);
 
-  const winsAgainst = {
+  const winComdition = {
     pierre: "ciseau",
     feuille: "pierre",
     ciseau: "feuille",
@@ -33,7 +33,7 @@ function determineWinner(userChoice, computerChoice) {
     return;
   }
 
-  if (winsAgainst[userChoice] === computerChoice) {
+  if (winComdition[userChoice] === computerChoice) {
     resultElement.textContent = `Vous avez gagné ! Vous avez choisi ${userChoice} et l'ordinateur a choisi ${computerChoice}.`;
     playerImage.classList.add("selected");
   } else {
