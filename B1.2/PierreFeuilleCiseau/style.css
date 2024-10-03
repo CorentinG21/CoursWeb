@@ -8,16 +8,16 @@ body {
     width: 100px;
     height: 100px;
     margin: 10px;
-    border: 2px solid transparent; /* bordure par défaut */
+    border: 2px solid transparent;
 }
 .selected {
-    border: 3px solid green; /* Gagnant: vert */
+    border: 3px solid green; 
 }
 .loser {
-    border: 3px solid red; /* Perdant: rouge */
+    border: 3px solid red; 
 }
 .egal {
-    border: 3px solid orange; /* Egalité: orange */
+    border: 3px solid orange;
 }
 #result {
     font-size: 30px;
