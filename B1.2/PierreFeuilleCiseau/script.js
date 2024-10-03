@@ -36,7 +36,8 @@ function determineWinner(userChoice, computerChoice) {
   if (winComdition[userChoice] === computerChoice) {
     resultElement.textContent = `Vous avez gagné ! Vous avez choisi ${userChoice} et l'ordinateur a choisi ${computerChoice}.`;
     playerImage.classList.add("selected");
-  } else {
+  } 
+  else {
     resultElement.textContent = `Vous avez perdu ! Vous avez choisi ${userChoice} et l'ordinateur a choisi ${computerChoice}.`;
     playerImage.classList.add("loser");
   }
