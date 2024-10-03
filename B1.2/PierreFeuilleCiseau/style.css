@@ -1,6 +1,7 @@
 body {
     text-align: center;
     margin-top: 12%;
+    background-color: gray;
 }
 .choice {
     cursor: pointer;
@@ -22,4 +23,7 @@ body {
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
+}
+img {
+    border-radius: 20px;
 }
