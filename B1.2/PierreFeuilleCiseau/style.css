@@ -11,13 +11,13 @@ body {
     border: 2px solid transparent; /* bordure par défaut */
 }
 .selected {
-    border: 2px solid green; /* Gagnant: vert */
+    border: 3px solid green; /* Gagnant: vert */
 }
 .loser {
-    border: 2px solid red; /* Perdant: rouge */
+    border: 3px solid red; /* Perdant: rouge */
 }
 .egal {
-    border: 2px solid orange; /* Egalité: orange */
+    border: 3px solid orange; /* Egalité: orange */
 }
 #result {
     font-size: 24px;
